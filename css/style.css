@@ -8,9 +8,25 @@ html {
   box-sizing: inherit;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 body {
   min-width: 320px;
   margin: 0;
+  font-size: 16px;
 }
 
 .container {
@@ -49,7 +65,7 @@ body {
 .burger {
   display: block;
   height: 40px;
-  width: 40px;
+  min-width: 40px;
   background-color: #FF3E79;
   border-radius: 50%;
   position: relative;
@@ -90,7 +106,7 @@ body {
   order: 2;
 }
 .logo__link {
-  margin: 0 20px;
+  margin-left: 20px;
 }
 
 .feedback {
@@ -103,6 +119,49 @@ body {
 }
 .feedback[hidden] {
   display: none;
+}
+
+.services {
+  background-color: #F8F8F8;
+}
+.services__title {
+  position: relative;
+  font-size: 28px;
+  padding: 24px 0;
+}
+.services__title::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: calc(50% - 20px);
+  left: -16px;
+  width: 4px;
+  height: 40px;
+  background-color: #41F6D7;
+  border-radius: 50px 0px 0px 50px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.nav__list {
+  display: flex;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.nav__list::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.nav__item {
+  padding: 8px 16px;
+}
+.nav__item--active {
+  border: 2px solid #B8FFEC;
+  border-radius: 6px;
+}
+.nav__link {
+  color: #7E7E82;
+  white-space: nowrap;
 }
 
 @media (min-width: 768px) {
