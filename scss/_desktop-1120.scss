@@ -28,6 +28,11 @@
                     border-radius: 2px;
                 }
         }
+
+        &__details {
+            cursor: pointer;
+        }
+        
         &__request, &__status {
             display: flex;
             padding-top: 30px;

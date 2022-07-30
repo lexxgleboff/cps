@@ -274,6 +274,9 @@ body {
     width: 3px;
     border-radius: 2px;
   }
+  .services__details {
+    cursor: pointer;
+  }
   .services__request, .services__status {
     display: flex;
     padding-top: 30px;
