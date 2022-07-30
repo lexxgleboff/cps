@@ -1,0 +1,88 @@
+.header {
+    border-bottom: 1px solid $border;
+    &__inner {
+        display: flex;
+        align-items: center;
+        height: 88px;
+    }
+    
+    &__repair {
+        position: relative;
+        order: 4;
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            top: calc(50% - 16px);
+            right: calc(100% + 20px);
+            width: 2px;
+            height: 32px;
+            border-radius: 1px;
+            background-color: $beige;
+        }
+    }
+    &__checkstatus {
+        order: 5;
+        margin-left: 16px;
+    }
+    
+}
+
+.burger {
+    display: block;
+    height: 40px;
+    min-width: 40px;
+    background-color: $pink;
+    border-radius: 50%;
+    position: relative;
+    order: 1;
+        &__line-center {
+            position: absolute;
+            top: calc(50% - 1px);
+            left: calc(50% - 9px);
+            width: 10px;
+            height: 2px;
+            background-color: white;
+            border-radius: 1px; 
+                &::before {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    width: 18px;
+                    height: 2px;
+                    background-color: white;
+                    border-radius: 1px;
+                    transform: translateY(-7px);
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    width: 14px;
+                    height: 2px;
+                    background-color: white;
+                    border-radius: 1px;
+                    transform: translateY(7px);
+                }
+            }
+}
+
+.logo {
+    flex-grow: 1;
+    order: 2;
+    &__link {
+        margin-left: 20px;
+    }
+}
+
+.feedback {
+    order: 3;
+    display: flex;
+    min-width: 152px;
+        &__profile, &__chat {
+            margin-left: 16px;
+        }
+        &[hidden] {
+            display: none;
+        }
+}

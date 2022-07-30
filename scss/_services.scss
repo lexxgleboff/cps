@@ -1,0 +1,90 @@
+.services {
+    background-color: $bg-main;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: $text-medium;
+    &__title {
+        position: relative;
+        font-size: 28px;
+        font-family: 'TTLakes-Bold';
+        letter-spacing: -0.6px;
+        padding: 24px 0;
+        color: $text-dark;
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: calc(50% - 20px);
+                left: -16px;
+                width: 4px;
+                height: 40px;
+                background-color: $menu-link-active;
+                border-radius: 50px 0px 0px 50px;
+                transform: matrix(-1, 0, 0, 1, 0, 0);
+            }
+    }
+    &__request, &__status {
+        display: none;
+    }
+    &__inner {
+        display: block;
+    }
+    &__cps {
+        width: 100%;
+        margin: 16px 0 27px;
+    }    
+
+    &__text {
+        margin: 24px 0 16px;
+    }
+
+    &__details-summary {
+        font-size: 16px;
+        font-weight: bold;
+        list-style: none;
+        margin-left: 30px;
+        position: relative;
+            &::before {
+                content: url('../img/arrow-spoiler.png');
+                position: absolute;
+                left: -16px;
+                transform: rotate(-90deg);
+                }
+
+            }
+    &__details[open] &__details-summary::before {
+        transform: rotate(0deg);
+    }
+
+    &__image {
+        margin-left: -16px;
+        margin-right: -16px;
+    }
+
+}
+
+.nav {
+    &__list {
+        display: flex;
+        overflow-x: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        align-items: center;
+            &::-webkit-scrollbar {
+                width: 0;
+                height: 0;
+        }
+    }
+    &__item {
+        padding: 8px 16px;
+            &--active {
+                border: 2px solid #B8FFEC;
+                border-radius: 6px;
+            }
+    }
+    &__link {
+        color: $text-light;
+        white-space: nowrap;
+    }
+}

@@ -1,0 +1,31 @@
+@media (min-width: 768px) {
+    .container {
+        padding: 0 40px 0 24px;
+    }
+    .header {
+        &__repair {
+            margin-left: 42px;
+        }
+    }
+
+    .feedback[hidden] {
+        display: flex;
+    }
+    .services {
+        &__inner {
+            display: flex;
+        }
+        &__image {
+            flex: 1 0 50%;
+            padding-left: 48px;
+        }
+        &__title {
+                &::before {
+                    left: -24px;
+                }
+        }
+        &__image {
+            margin: 0;
+        }
+    }
+}

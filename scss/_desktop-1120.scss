@@ -1,0 +1,45 @@
+@media (min-width: 1120px) {
+    .header__inner {
+        display: none;
+    }
+
+    .container {
+        padding: 0 32px 0 34px;
+        max-width: 1120px;
+        margin: 0 auto;
+    }
+
+    .services {
+        &__image {
+            padding-right: 0;
+            padding-left: 36px;
+        }
+
+        &__title {
+            padding: 42px 0 16px;
+            flex-grow: 1;
+                &::before {
+                    top: calc(50% - 8px);
+                    left: -34px;
+                    width: 3px;
+                    border-radius: 2px;
+                }
+        }
+        &__request, &__status {
+            display: flex;
+            padding-top: 30px;
+            align-items: center;
+            font-style: normal;
+            font-size: 16px;
+            margin-left: 16px;
+                &-link {
+                    margin-right: 8px;
+                }
+        }
+        &__btn {
+            display: flex;
+        }
+    }
+
+
+}

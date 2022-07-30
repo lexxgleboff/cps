@@ -55,7 +55,17 @@
         <aside></aside>
         <section class="services">
             <div class="container">
-                <h1 class="services__title">Услуги и сервисы</h1>
+                <div class="services__btn">
+                        <h1  class="services__title">Услуги и сервисы</h1>                  
+                    <div class="services__request">
+                        <a href="#" class="services__request-link">Оставить заявку</a>
+                        <img src="img/repair.png" alt="Оставить заявку">
+                    </div>
+                    <div class="services__status">
+                        <a href="#" class="services__status-link">Статус ремонта</a>
+                        <img src="img/checkstatus.png" alt="Статус ремонта">
+                    </div>
+                </div>
                 <nav class="nav services__nav">
                     <ul class="nav__list">
                         <li class="nav__item nav__item--active"><a class="nav__link" href="#">Ремонтируемые бренды</a></li>
@@ -66,15 +76,22 @@
                         <li class="nav__item"><a class="nav__link" href="#">Отзывы</a></li>
                     </ul>
                 </nav>
-                <p class="services_text">
-                    Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-                </p>
-                <details>
-                        <summary>Читать далее</summary>
-                        <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</p>
-                </details>
-                <img src="img/cps.jpg" alt="CPS">
+                <div class="services__inner">
+                    <div>
+                        <p class="services__text">
+                            Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+                        </p>
+                        <details class="services__details">
+                            <summary class="services__details-summary">Читать далее</summary>
+                            <p>Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+                        </details>
+                    </div>
+                    <div class="services__image">
+                        <img class="services__cps" src="img/cps.jpg" alt="CPS">
+                    </div>
+                </div>
             </div>
+              
         </section>
     </main>
 </body>
