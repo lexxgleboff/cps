@@ -1,6 +1,9 @@
 @media (min-width: 1120px) {
-    .header__inner {
-        display: none;
+    .header {
+        border-bottom: none;
+            &__inner {
+                display: none;
+            }
     }
 
     .container {

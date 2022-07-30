@@ -249,6 +249,9 @@ body {
   }
 }
 @media (min-width: 1120px) {
+  .header {
+    border-bottom: none;
+  }
   .header__inner {
     display: none;
   }
