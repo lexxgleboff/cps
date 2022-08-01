@@ -8,6 +8,24 @@
         }
     }
 
+    .logo {
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            display: block;
+            top: calc(50% - 16px);
+            right: calc(100% - 20px);
+            width: 2px;
+            height: 32px;
+            border-radius: 1px;
+            background-color: $beige;
+        }
+        &__link {
+            margin-left: 40px;
+        }
+    }
+
     .feedback[hidden] {
         display: flex;
     }

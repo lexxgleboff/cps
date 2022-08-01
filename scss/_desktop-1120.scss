@@ -37,11 +37,12 @@
             display: flex;
             padding-top: 30px;
             align-items: center;
-            font-style: normal;
+            font-weight: 700;
             font-size: 16px;
             margin-left: 16px;
-                &-link {
-                    margin-right: 8px;
+            &-link {
+                margin-right: 8px;
+                color: $text-dark;
                 }
         }
         &__btn {
@@ -49,5 +50,14 @@
         }
     }
 
+    .nav {
+        &__list {
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        // &__link {
+        //     white-space: wrap;
+        // }
+    }
 
 }

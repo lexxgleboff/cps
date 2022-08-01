@@ -3,7 +3,7 @@
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.2px;
-    color: $text-medium;
+    color: $text-dark;
     &__title {
         position: relative;
         font-size: 28px;
@@ -86,5 +86,6 @@
     &__link {
         color: $text-light;
         white-space: nowrap;
+        font-size: 16px;
     }
 }

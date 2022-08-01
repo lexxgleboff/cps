@@ -305,7 +305,6 @@ body {
   }
   .services__request-link, .services__status-link {
     margin-right: 8px;
-    color: #1B1C21;
   }
   .services__btn {
     display: flex;
