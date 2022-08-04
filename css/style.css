@@ -87,6 +87,7 @@ body {
   min-width: 40px;
   background-color: #FF3E79;
   border-radius: 50%;
+  cursor: pointer;
   position: relative;
   order: 1;
 }
@@ -138,6 +139,133 @@ body {
 }
 .feedback[hidden] {
   display: none;
+}
+
+.menu {
+  max-width: 320px;
+  width: 320px;
+  overflow-x: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+}
+.menu__head {
+  display: flex;
+  align-items: center;
+}
+.menu .logo__link {
+  margin-left: 16px;
+}
+.menu .logo::before {
+  display: none;
+}
+.menu > .container {
+  padding: 19px 24px 32px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.menu__search {
+  order: 3;
+  height: 40px;
+}
+.menu__inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.menu__contacts {
+  margin-top: auto;
+}
+.menu__email {
+  display: block;
+  margin-top: 27px;
+  margin-bottom: 12px;
+}
+.menu__tel {
+  display: block;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: -0.6px;
+}
+.menu__lang-item--active {
+  color: #7E7E82 !important;
+}
+.menu a {
+  color: #1B1C21;
+}
+
+.navigation__list {
+  margin-top: 50px;
+}
+.navigation__item {
+  position: relative;
+  font-weight: 700;
+  padding: 5px 24px;
+  margin-left: -24px;
+  margin-bottom: 32px;
+  cursor: pointer;
+}
+.navigation__item--active {
+  font-weight: 500;
+  position: relative;
+  color: #7E7E82;
+}
+.navigation__item--active::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: calc(50% - 16px);
+  left: 0;
+  width: 4px;
+  height: 32px;
+  background-color: #41F6D7;
+  border-radius: 50px 0px 0px 50px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.navigation__item::after {
+  content: "";
+  background: #41F6D7;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  right: 100%;
+  z-index: -1;
+  padding: 0.85em 0.75em;
+  display: block;
+  border-radius: 7px 0px 0px 7px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  transition: all 0.35s;
+}
+.navigation__item:hover::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: all 0.35s;
+}
+.navigation__item:active {
+  opacity: 0.5;
+}
+
+.burger__close:before, .burger__close:after {
+  position: absolute;
+  left: calc(50% - 1px);
+  top: calc(50% - 11px);
+  content: " ";
+  height: 22px;
+  width: 2px;
+  background-color: #fff;
+  border-radius: 1px;
+}
+.burger__close:before {
+  transform: rotate(45deg);
+}
+.burger__close:after {
+  transform: rotate(-45deg);
 }
 
 .services {
