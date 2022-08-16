@@ -2,13 +2,12 @@
 @import '_fonts';
 
 html {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 *,*::after,*::before {
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -34,6 +33,10 @@ body {
     font-weight: 400;
 }
 
+img {
+    max-width: 100%;
+}
+
 .container {
     padding: 0 16px;
 }
@@ -47,6 +50,9 @@ body {
 
 // Servicess
 @import '_services';
+
+// Brands Slider
+@import '_brands';
 
 // Медиа запросы
 @import '_tablet-768';

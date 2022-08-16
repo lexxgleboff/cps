@@ -59,5 +59,24 @@
         //     white-space: wrap;
         // }
     }
+    .brands {
+        & > .container {
+            padding: 0 32px 34px;
+        }
 
+        &__title {
+            padding-left: 32px;
+        }
+        &-slider{
+            &__wrapper {
+                gap: 16px 48px;
+            }
+            &__slide:nth-child(7), &__slide:nth-child(8)  {
+                display: block;
+            }
+        }
+        &__image {
+            width: 240px;
+        }
+    }
 }

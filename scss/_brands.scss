@@ -1,0 +1,95 @@
+.brands {
+    border-top: 1px solid $border-brands;
+        & > .container {
+            background-color: $bg-block;
+            position: relative;
+            padding: 0 0 0 16px;
+            &::after {
+                content: '';
+                position: absolute;
+                display: block;
+                height: 72px;
+                width: 24px;
+                top: 12%;
+                right: 0%;
+                background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+                z-index: 3;
+            }
+        }
+    &__title {
+        text-transform: uppercase;
+        line-height: 24px;
+        padding: 16px;
+        max-width: 1120px;
+        margin: auto;
+        background: linear-gradient(-270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    }
+    &__image {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 224px;
+        width: 224px;
+        height: 72px;
+        border: 1px solid $beige;
+        border-radius: 6px;
+        padding: 0 16px;
+        background-color: #fff;
+    }
+    &__more {
+        width: 36px;
+        height: 36px;
+        border: 2px solid $pink;
+        border-radius: 50%;
+        position: relative;
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 9px;
+                height: 2px;
+                background-color: $pink;
+                top: calc(50% + 2px);
+                left: calc(50% - 4.5px);
+                transform: rotate(-45deg);
+                border-radius: 2px;
+            }
+            &::after {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 9px;
+                height: 2px;
+                background-color: $pink;
+                top: calc(50% - 3px);
+                left: calc(50% - 4.5px);
+                transform: rotate(45deg);
+                border-radius: 2px;
+
+            }
+        }
+        &-slider {
+            height: 136px;
+            padding: 24px 0;
+            &__slide {
+                flex-shrink: 1;
+            }
+        }
+        &__btn {
+            &--hidden {
+                display: none;
+            }
+        }
+}
+
+.swiper {
+    &-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        background-color: $bullet;
+        &-active {
+            background-color: $bullet-active;
+        }
+    }
+
+}
