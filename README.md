@@ -4,3 +4,6 @@ https://lexxgleboff.github.io/cps/
 
 мобильное меню
 https://lexxgleboff.github.io/cps/mobile_menu
+
+слайдер
+https://lexxgleboff.github.io/cps/brands
