@@ -1,0 +1,17 @@
+.electronics {
+  &-slider {
+    &__slide {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 240px;
+      height: 160px;
+      border: 1px solid #EAEAEA;
+      border-radius: 6px;
+      padding: 16px;
+    }
+  }
+  &__more {
+    align-self: flex-end;
+  }
+}

@@ -53,9 +53,11 @@
             &__wrapper {
                 flex-wrap: wrap;
                 gap: 14px 24px;
+                // transform: translate3d(0px, 0px, 0px) !important;
             }
             &__slide {
                 width: 224px;
+                margin-right: 0;
                 &--hide {
                     display: none;
                 }
@@ -74,10 +76,6 @@
             }
         }
 
-        &__title {
-            padding-left: 24px;
-        }
-
         &__btn {
             display: block;
             border: none;
@@ -90,7 +88,7 @@
             letter-spacing: -0.2px;
             position: relative;
             cursor: pointer;
-            background-color: $bg-block;
+            background-color: $bg-main;
                 &::before {
                     content: url('../img/arrow-spoiler.png');
                     position: absolute;
@@ -98,6 +96,9 @@
                     transform: rotate(0deg);
                 }
         }
-
+        .title {
+          padding-left: 24px;
+        }
     }
-}
+  }
+

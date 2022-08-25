@@ -6,10 +6,36 @@
             }
     }
 
+    .main {
+      position: absolute;
+      left: 320px;
+    }
+
+    .menu {
+      box-shadow: -10px 0px 28px -16px rgba(14, 24, 80, 0.2);
+      transform: translateX(0);
+      opacity: 1;
+      transition: 1s;
+    }
+
+    .burger {
+      display: none;
+    }
+
+    .logo {
+      &__link {
+        margin-left: 0;
+      }
+      &::before {
+        display: none;
+      }
+    }
+
     .container {
         padding: 0 32px 0 34px;
         max-width: 1120px;
         margin: 0 auto;
+
     }
 
     .services {
@@ -32,7 +58,7 @@
         &__details {
             cursor: pointer;
         }
-        
+
         &__request, &__status {
             display: flex;
             padding-top: 30px;
@@ -53,30 +79,60 @@
     .nav {
         &__list {
             flex-wrap: wrap;
-            justify-content: space-between;
         }
-        // &__link {
-        //     white-space: wrap;
-        // }
+
     }
     .brands {
         & > .container {
             padding: 0 32px 34px;
         }
 
-        &__title {
-            padding-left: 32px;
-        }
+
         &-slider{
-            &__wrapper {
-                gap: 16px 48px;
-            }
-            &__slide:nth-child(7), &__slide:nth-child(8)  {
-                display: block;
-            }
+          &__wrapper {
+            gap: 16px 32px;
+          }
+          &__slide {
+            width: 240px;
+          }
+          &__slide:nth-child(7), &__slide:nth-child(8)  {
+            display: block;
+          }
         }
         &__image {
             width: 240px;
+        }
+    }
+
+    .title {
+      padding-left: 32px;
+    }
+
+    .navigation {
+      &__item::after {
+        content: "";
+        background: $menu-link-active;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -100%;
+        right: 100%;
+        z-index: -1;
+        padding: 0.85em 0.75em;
+        display: block;
+        border-radius: 7px 0px 0px 7px;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        transition: all 0.35s;
+      }
+        &__item:hover::after {
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                transition: all 0.35s;
+              }
+        &__item:active {
+            opacity: .5;
         }
     }
 }

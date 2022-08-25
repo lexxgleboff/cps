@@ -1,0 +1,127 @@
+// Стили слайдера
+@import '_swiper';
+@import '_swiper-vars';
+@import '_pagination';
+
+@import '_colors';
+@import '_fonts';
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+*,*::after,*::before {
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'TTLakes-Regular', 'Aria', sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    padding: 0 16px;
+    background-color: $bg-main;
+}
+
+.wrapper {
+    min-width: 320px;
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.main, .header {
+  opacity: 1;
+  transition: opacity 1s;
+  &--mute {
+    opacity: 0.04;
+    transition: opacity 1s
+  }
+}
+
+.title {
+  text-transform: uppercase;
+  line-height: 24px;
+  padding: 16px;
+  max-width: 1120px;
+  margin: auto;
+  background: linear-gradient(-270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+}
+
+.more {
+  display: block;
+  width: 36px;
+  height: 36px;
+  border: 2px solid $pink;
+  border-radius: 50%;
+  position: relative;
+      &::before {
+          content: '';
+          display: block;
+          position: absolute;
+          width: 9px;
+          height: 2px;
+          background-color: $pink;
+          top: calc(50% + 2px);
+          left: calc(50% - 4.5px);
+          transform: rotate(-45deg);
+          border-radius: 2px;
+      }
+      &::after {
+          content: '';
+          display: block;
+          position: absolute;
+          width: 9px;
+          height: 2px;
+          background-color: $pink;
+          top: calc(50% - 3px);
+          left: calc(50% - 4.5px);
+          transform: rotate(45deg);
+          border-radius: 2px;
+
+      }
+  }
+
+
+// header
+@import '_header';
+
+// mobile_menu
+@import '_mobile_menu';
+
+// Servicess
+@import '_services';
+
+// Brands Slider
+@import '_brands';
+@import '_electronics';
+
+// Медиа запросы
+@import '_tablet-768';
+@import '_desktop-1120';
+
+
+
