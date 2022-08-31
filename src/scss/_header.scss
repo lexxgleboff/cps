@@ -5,7 +5,7 @@
         align-items: center;
         height: 88px;
     }
-    
+
     &__repair {
         position: relative;
         order: 4;
@@ -25,7 +25,7 @@
         order: 5;
         margin-left: 16px;
     }
-    
+
 }
 
 .burger {
@@ -44,7 +44,7 @@
             width: 10px;
             height: 2px;
             background-color: white;
-            border-radius: 1px; 
+            border-radius: 1px;
                 &::before {
                     content: "";
                     position: absolute;
@@ -77,14 +77,4 @@
     }
 }
 
-.feedback {
-    order: 3;
-    display: flex;
-    min-width: 152px;
-        &__profile, &__chat {
-            margin-left: 16px;
-        }
-        &[hidden] {
-            display: none;
-        }
-}
+

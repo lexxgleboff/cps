@@ -1,14 +1,36 @@
 .electronics {
+  & > .container {
+    position: relative;
+    padding: 0 0 0 16px;
+      &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 160px;
+        width: 24px;
+        top: 25px;
+        right: 0%;
+        background: linear-gradient(270deg, #F8F8F8 16.84%, rgba(248, 248, 248, 0.0001) 100%);
+        z-index: 3;
+    }
+  }
   &-slider {
+    height: 228px;
+    padding: 24px 0;
     &__slide {
+      margin-right: 16px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      background-color: white;
       width: 240px;
       height: 160px;
-      border: 1px solid #EAEAEA;
+      border: 1px solid $beige;
       border-radius: 6px;
       padding: 16px;
+    }
+    &__title {
+      font-size: 16px;
     }
   }
   &__more {

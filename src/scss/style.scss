@@ -105,6 +105,86 @@ img {
       }
   }
 
+  .btn-more {
+    display: block;
+    border: none;
+    padding-left: 31px;
+    color: $text-medium;
+    font-size: 16px;
+    font-family: "TTLakes-Medium", "Aria", sans-serif;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    position: relative;
+    cursor: pointer;
+    background-color: $bg-main;
+        &::before {
+            content: url('../img/arrow-spoiler.png');
+            position: absolute;
+            left: 7px;
+            transform: rotate(0deg);
+        }
+}
+
+.section, .footer {
+  border-top: 1px solid $border-brands;
+}
+
+.btn {
+  background-color: $pink;
+  font-size: 12px;
+  font-family: 'TTLakes-Medium', 'Aria', sans-serif;
+  color: white;
+  line-height: 24px;
+  text-align: right;
+  letter-spacing: -0.15px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 16px;
+  padding: 4px 40px 4px 12px;
+  position: relative;
+  cursor: pointer;
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 9px;
+      height: 2px;
+      background-color: white;
+      top: calc(47% + 2px);
+      right: 11px;
+      transform: rotate(-45deg);
+      border-radius: 2px;
+  }
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 9px;
+        height: 2px;
+        background-color: white;
+        top: calc(47% - 3px);
+        right: 11px;
+        transform: rotate(45deg);
+        border-radius: 2px;
+
+  }
+}
+
+.modal {
+  &-title {
+    color: $text-medium;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    font-family: 'TTLakes-Bold';
+    font-weight: 700;
+  }
+}
+
+.textarea {
+  height: 118px;
+}
 
 // header
 @import '_header';
@@ -117,7 +197,21 @@ img {
 
 // Brands Slider
 @import '_brands';
+
+// Electronics slider
 @import '_electronics';
+
+// Price slider
+@import '_price';
+
+// Footer
+@import '_footer';
+
+// Modal__feedback
+@import '_feedback';
+
+// Modal__call
+@import '_call';
 
 // Медиа запросы
 @import '_tablet-768';

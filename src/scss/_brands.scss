@@ -1,5 +1,4 @@
 .brands {
-    border-top: 1px solid $border-brands;
         & > .container {
             position: relative;
             padding: 0 0 0 16px;
@@ -28,19 +27,20 @@
         background-color: #fff;
     }
         &-slider {
-            height: 136px;
+            height: 140px;
             padding: 24px 0;
+
             &__slide {
               margin-right: 16px;
                 flex-shrink: 1;
             }
         }
-        &__btn {
-            &--hidden {
-                display: none;
-            }
-        }
-}
+      }
+      .btn-more {
+          &--hidden {
+              display: none;
+          }
+      }
 
 .swiper {
     &-pagination-bullet {

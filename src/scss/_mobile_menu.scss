@@ -66,6 +66,7 @@
           opacity: 1;
 
         }
+        
 }
 
 .logo {
@@ -91,18 +92,18 @@
                 font-weight: 500;
                 position: relative;
                 color: $text-light;
-                &::before {
-                    content: '';
-                    display: block;
-                    position: absolute;
-                    top: calc(50% - 16px);
-                    left: 0;
-                    width: 4px;
-                    height: 32px;
-                    background-color: $menu-link-active;
-                    border-radius: 50px 0px 0px 50px;
-                    transform: matrix(-1, 0, 0, 1, 0, 0);
-                }
+                  &::before {
+                      content: '';
+                      display: block;
+                      position: absolute;
+                      top: calc(50% - 16px);
+                      left: 0;
+                      width: 4px;
+                      height: 32px;
+                      background-color: $menu-link-active;
+                      border-radius: 50px 0px 0px 50px;
+                      transform: matrix(-1, 0, 0, 1, 0, 0);
+                  }
             }
     }
 
@@ -125,4 +126,16 @@
     &__close:after {
         transform: rotate(-45deg);
     }
+}
+
+.menu-feedback {
+  order: 3;
+  display: flex;
+  min-width: 152px;
+      &__profile, &__chat {
+          margin-left: 16px;
+      }
+      &[hidden] {
+          display: none;
+      }
 }

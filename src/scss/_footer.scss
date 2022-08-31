@@ -1,0 +1,16 @@
+.footer {
+  text-align: center;
+  font-size: 14px;
+  color: $text-light;
+  background-color: $bg-main;
+  &__date, &__politics, &__info {
+    flex-basis: 33%;
+  }
+  &__inner {
+    padding: 0 0 16px 0;
+  }
+  &__info {
+    margin-bottom: 0;
+    padding-bottom: 16px;
+  }
+}

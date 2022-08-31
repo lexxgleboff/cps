@@ -16,6 +16,10 @@
       transform: translateX(0);
       opacity: 1;
       transition: 1s;
+      &--mute {
+        opacity: 0.04;
+        transition: opacity 1s
+      }
     }
 
     .burger {
@@ -131,8 +135,47 @@
                 bottom: 0;
                 transition: all 0.35s;
               }
-        &__item:active {
+        &__item:hover {
             opacity: .5;
         }
     }
+    .electronics {
+      &-slider {
+        &__wrapper{
+          gap: 16px 32px;
+        }
+        &__slide {
+          width: 240px;
+        }
+    }
+}
+.price {
+  &-slider {
+    &__description {
+      flex-basis: 50%;
+      &--price {
+        flex-basis: 20%;
+      }
+      &--time {
+        flex-basis: 30%;
+      }
+    }
+    &__title {
+      &--header {
+        flex-basis: 50%;
+      }
+      &--price {
+        flex-basis: 20%;
+      }
+      &--time {
+        flex-basis: 30%;
+      }
+    }
+  }
+}
+.call, .feedback {
+  &__close {
+    display: block;
+  }
+}
 }
