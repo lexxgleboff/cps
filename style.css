@@ -370,6 +370,9 @@ img {
 .title {
   text-transform: uppercase;
   line-height: 24px;
+  font-size: 16px;
+  color: #7E7E82;
+  font-weight: 400;
   padding: 16px;
   max-width: 1120px;
   margin: auto;
@@ -814,6 +817,12 @@ img {
 
 .price-slider {
   height: 260px; }
+  .price-slider-header {
+    display: none; }
+    .price-slider-header__title {
+      font-size: 14px;
+      opacity: 0.72;
+      color: #7E7E82; }
   .price-slider__slide {
     margin-right: 16px;
     width: 260px;
@@ -831,8 +840,6 @@ img {
     font-size: 14px;
     color: #1B1C21;
     margin: 0 0 11px 0; }
-  .price-slider__header {
-    display: none; }
 
 .price__btn {
   position: absolute;
@@ -1119,13 +1126,29 @@ img {
       display: none; }
   .price-slider {
     height: 100%; }
+    .price-slider-header {
+      display: flex;
+      padding: 32px 16px 16px; }
+      .price-slider-header__title--header {
+        display: block;
+        flex-basis: 55%; }
+      .price-slider-header__title--price {
+        flex-basis: 15%; }
+      .price-slider-header__title--time {
+        flex-basis: 35%; }
+    .price-slider__title {
+      display: none; }
+      .price-slider__title--header {
+        display: block;
+        flex-basis: 55%; }
+      .price-slider__title--price {
+        flex-basis: 15%; }
+      .price-slider__title--time {
+        flex-basis: 35%; }
     .price-slider__wrapper {
       flex-direction: column;
       background-color: white;
       border-radius: 6px; }
-    .price-slider__header {
-      display: flex;
-      padding: 32px 16px 16px; }
     .price-slider__pagination {
       display: none; }
     .price-slider__slide {
@@ -1141,15 +1164,6 @@ img {
       width: 100%; }
       .price-slider__inner--no-border {
         border-bottom: none; }
-    .price-slider__title {
-      display: none; }
-      .price-slider__title--header {
-        display: block;
-        flex-basis: 55%; }
-      .price-slider__title--price {
-        flex-basis: 15%; }
-      .price-slider__title--time {
-        flex-basis: 35%; }
     .price-slider__description {
       margin: 0;
       flex-basis: 55%; }
@@ -1291,18 +1305,18 @@ img {
     gap: 16px 32px; }
   .electronics-slider__slide {
     width: 240px; }
+  .price-slider-header__title--header {
+    flex-basis: 50%; }
+  .price-slider-header__title--price {
+    flex-basis: 20%; }
+  .price-slider-header__title--time {
+    flex-basis: 30%; }
   .price-slider__description {
     flex-basis: 50%; }
     .price-slider__description--price {
       flex-basis: 20%; }
     .price-slider__description--time {
       flex-basis: 30%; }
-  .price-slider__title--header {
-    flex-basis: 50%; }
-  .price-slider__title--price {
-    flex-basis: 20%; }
-  .price-slider__title--time {
-    flex-basis: 30%; }
   .call__close, .feedback__close {
     display: block; } }
 
