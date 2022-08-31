@@ -150,6 +150,7 @@ headerBurger.addEventListener('click', (event) => {
     menu.classList.add('menu--active')
     main.classList.add('main--mute')
     header.classList.add('header--mute')
+    document.body.style.overflow = "hidden"
   }
 })
 
@@ -158,6 +159,7 @@ menuBurger.addEventListener('click', (event) => {
     menu.classList.remove('menu--active')
     main.classList.remove('main--mute')
     header.classList.remove('header--mute')
+    document.body.style.overflow = ""
   }
 })
 document.addEventListener('click', (event) => {
@@ -168,7 +170,7 @@ document.addEventListener('click', (event) => {
     header.classList.remove('header--mute')
     feedback.classList.remove('feedback--active')
     call.classList.remove('call--active')
-
+    document.body.style.overflow = ""
   }
 
   if ((event.target.closest('.header')) && (!event.target.closest('.menu-feedback__chat')) && (!event.target.closest('.menu-feedback__call')) && (!event.target.closest('.header__burger'))) {
@@ -178,6 +180,7 @@ document.addEventListener('click', (event) => {
     menu.classList.remove('menu--mute')
     main.classList.remove('main--mute')
     header.classList.remove('header--mute')
+    document.body.style.overflow = ""
   }
   if ((event.target.closest('.menu')) && (!event.target.closest('.menu-feedback__chat')) && (!event.target.closest('.menu-feedback__call'))) {
     call.classList.remove('call--active')
@@ -186,6 +189,7 @@ document.addEventListener('click', (event) => {
     menu.classList.remove('menu--mute')
     main.classList.remove('main--mute')
     header.classList.remove('header--mute')
+    document.body.style.overflow = ""
   }
 
    if ((feedback.classList.contains('feedback--active')) && (event.target)) {
@@ -193,6 +197,7 @@ document.addEventListener('click', (event) => {
     menu.classList.remove('menu--mute')
     main.classList.remove('main--mute')
     call.classList.remove('call--active')
+    document.body.style.overflow = ""
 
   }
    if ((call.classList.contains('call--active')) && (event.target)) {
@@ -200,6 +205,7 @@ document.addEventListener('click', (event) => {
     menu.classList.remove('menu--mute')
     main.classList.remove('main--mute')
     feedback.classList.remove('feedback--active')
+    document.body.style.overflow = ""
 
   }
    if (feedback.classList.contains('feedback--active')) {
@@ -208,6 +214,7 @@ document.addEventListener('click', (event) => {
     main.classList.add('main--mute')
     header.classList.add('header--mute')
     call.classList.remove('call--active')
+    document.body.style.overflow = "hidden"
 
   }
    if (call.classList.contains('call--active')) {
@@ -216,7 +223,7 @@ document.addEventListener('click', (event) => {
     main.classList.add('main--mute')
     header.classList.add('header--mute')
     feedback.classList.remove('feedback--active')
-
+    document.body.style.overflow = "hidden"
   }
 
 
@@ -270,12 +277,14 @@ for (let i = 0; i < feedbackCall.length; i++) {
     event.preventDefault()
     if (!event.target.closest('.call')) {
       call.classList.toggle('call--active')
+      document.body.style.overflow = ""
     }
   })
   feedbackChat[i].addEventListener('click', (event) => {
     event.preventDefault()
     if (!event.target.closest('.feedback')) {
       feedback.classList.toggle('feedback--active')
+      document.body.style.overflow = ""
     }
   })
 }
@@ -287,7 +296,7 @@ feedbackClose.addEventListener('click', (event) => {
     menu.classList.remove('menu--mute')
     main.classList.remove('main--mute')
     header.classList.remove('header--mute')
-
+    document.body.style.overflow = ""
 })
 
 
@@ -299,6 +308,6 @@ callClose.addEventListener('click', (event) => {
     menu.classList.remove('menu--mute')
     main.classList.remove('main--mute')
     header.classList.remove('header--mute')
-
+    document.body.style.overflow = ""
 })
 

@@ -29,9 +29,7 @@
         }
     }
 
-    // .feedback[hidden] {
-    //     display: flex;
-    // }
+
     .services {
         &__inner {
             display: flex;
@@ -124,14 +122,39 @@
       }
       &-slider {
         height: 100%;
+        &-header {
+          display: flex;
+          padding: 32px 16px 16px;
+          &__title {
+            &--header {
+              display: block;
+              flex-basis: 55%;
+            }
+            &--price {
+              flex-basis: 15%;
+            }
+            &--time {
+              flex-basis: 35%;
+            }
+          }
+        }
+        &__title {
+          display: none;
+          &--header {
+            display: block;
+            flex-basis: 55%;
+          }
+          &--price {
+            flex-basis: 15%;
+          }
+          &--time {
+            flex-basis: 35%;
+          }
+        }
         &__wrapper {
           flex-direction: column;
           background-color: white;
           border-radius: 6px;
-        }
-        &__header {
-          display: flex;
-          padding: 32px 16px 16px;
         }
 
         &__pagination {
@@ -152,19 +175,6 @@
             &--no-border{
               border-bottom: none;
             }
-        }
-        &__title {
-          display: none;
-          &--header {
-            display: block;
-            flex-basis: 55%;
-          }
-          &--price {
-            flex-basis: 15%;
-          }
-          &--time {
-            flex-basis: 35%;
-          }
         }
         &__description {
           margin: 0;
